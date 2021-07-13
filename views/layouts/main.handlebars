@@ -7,6 +7,7 @@
   <title>Tech Blog</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {{!-- TODO: add css --}}
   <link rel="stylesheet" href="">
 </head>
 
@@ -15,14 +16,14 @@
   <div class="wrapper">
 
     <header>
-      <div>
-        <nav class"nav">
-          <span><a href="/">Home</a></span>
+      <div class="container-fluid">
+        <nav class="nav">
+          <span class="mx-3"><a href="/">Home</a></span>
           {{#if loggedIn}}
           <a href="/dashboard">Dashboard</a>
-          <button id="logout" class="btn-no-style">logout</button>
+          <button id="logout" class="btn-no-style">Logout</button>
           {{else}}
-          <a href="/login">login</a>
+          <a href="/login">Login</a>
           {{/if}}
         </nav>
       </div>
@@ -33,7 +34,7 @@
     </main>
 
   </div>
-
+{{!-- TODO add js --}}
   {{#if loggedIn}}
   <script src=""></script>
   {{/if}}
