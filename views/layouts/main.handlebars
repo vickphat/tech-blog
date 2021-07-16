@@ -17,13 +17,14 @@
 
     <header>
       <div class="container-fluid">
-        <nav class="nav">
-          <span class="mx-3"><a href="/">Home</a></span>
+        <nav class="nav justify-content-center">
+         <h2><span class="mx-3 "><a href="/">Home</a></span></h2> 
           {{#if loggedIn}}
-          <a href="/dashboard">Dashboard</a>
-          <button id="logout" class="btn-no-style">Logout</button>
+         <h2><a href="/dashboard">Dashboard</a></h2> 
+         <h3><button id="logout" class="mx-3 btn-danger float-right">Logout</button></h3> 
+          
           {{else}}
-          <a href="/login">Login</a>
+         <h2><a href="/login">Login</a></h2> 
           {{/if}}
         </nav>
       </div>
