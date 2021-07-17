@@ -54,7 +54,8 @@ where developers can publish their blog posts and comment on other developers’
 the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, 
 Sequelize as the ORM, and the express-session npm package for authentication.
 
-
+The folowing link is to the deployed application:
+https://floating-hamlet-44210.herokuapp.com/
 
 ## Installation:
 
