@@ -1,16 +1,27 @@
-<div class="card">
-    <h3 class="card-header">Sign Up</h3>
+<div class="container card">
+
+    <h3 class="card-header text-center">Sign Up</h3>
+
     <form id="signup-form" class="card-body">
-        <label for="username-signup" class="form-label">Username</label>
-        <input id="username-signup" type="text" class="form-input" />
 
+        <div class="mb-3 d-flex justify-content-center">
+            <label for="username-signup" class="form-label mr-3">Username </label>
+            <input id="username-signup" type="text" class="form-input" />
+        </div>
 
-        <label class="form-label" for="password-signup">Password</label>
-        <input id="password-signup" type="password" class="form-input" />
+        <div class="mb-3 d-flex justify-content-center">
+            <label class="form-label mr-3" for="password-signup">Password</label>
+            <input id="password-signup" type="password" class="form-input" />
+        </div>
 
-        <button type="submit" class="btn">Signup!</button>
-        <a class="login-link" href="/login">Log in instead</a>
+        <div class="mb-3 d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Sign-up!</button>
+        </div>
+
+        <a class="login-link float-right" href="/login">Already have an account? Login here!</a>
+
     </form>
+
 </div>
 
 <script src="/js/signup.js"></script>

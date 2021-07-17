@@ -7,34 +7,38 @@
   <title>Tech Blog</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    {{!-- TODO: add css --}}
+  {{!-- TODO: add css --}}
   <link rel="stylesheet" href="">
 </head>
 
-<body>
+<body class="bg-dark">
 
-  <div class="wrapper">
+  <header>
+    <div class="container">
 
-    <header>
-      <div class="container-fluid">
-        <nav class="nav justify-content-center">
-         <h2><span class="mx-3 "><a href="/">Home</a></span></h2> 
-          {{#if loggedIn}}
-         <h2><a href="/dashboard">Dashboard</a></h2> 
-         <h3><button id="logout" class="mx-3 btn-danger float-right">Logout</button></h3> 
-          
-          {{else}}
-         <h2><a href="/login">Login</a></h2> 
-          {{/if}}
-        </nav>
-      </div>
-    </header>
+      <nav class="nav justify-content-center border">
 
-    <main>
-      {{{ body }}}
-    </main>
+        <h2><span class="mx-3 "><a href="/">Home</a></span></h2>
 
-  </div>
+        {{#if loggedIn}}
+
+        <h2><a href="/dashboard">Dashboard</a></h2>
+        <h3><button id="logout" class="mx-3 btn-danger float-right">Logout</button></h3>
+
+        {{else}}
+        <h2><a href="/login">Login</a></h2>
+        {{/if}}
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main class="p-4">
+    {{{ body }}}
+  </main>
+
+
 
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
